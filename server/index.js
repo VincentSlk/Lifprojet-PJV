@@ -10,10 +10,15 @@ const server = http.createServer(app);
 
 const io = new Server(server , {
     cors :{
-        origin: "http://localhost:3000" // A CHANGER POUR REACT 
+        origin: "http://localhost:5173", // A CHANGER POUR REACT 
+        methods: ["GET" , "POST"],
     },
 })
 
-server.listen(3001, () => {
+io.on("connection", (socket) => {
+   console.log(`User Connected: ${socket.id}`) 
+})
+
+server.listen(5174, () => {
     console.log("SERVER IS RUNNING");
 });
