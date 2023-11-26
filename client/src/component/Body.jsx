@@ -1,11 +1,14 @@
-import React from 'react'
-import Jeu from '../assets/menudebut.png'
+import React from "react";
+//import Jeu from '../assets/menudebut.png'
 function Body() {
   return (
-    <div className='h-[95%] flex justify-center'>  
-        <img className='h-full aspect-square ' src={Jeu}></img> 
+    <div className="containerMain h-[95%]">
+      <div className="flex flex-col">
+        <button>Créer</button>
+        <button>Rejoindre</button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Body
+export default Body;

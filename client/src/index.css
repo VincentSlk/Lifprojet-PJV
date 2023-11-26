@@ -5,3 +5,14 @@
 body{
     background-color: rgb(21, 1,21,0.97);
 }
+
+.containerMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/menudebut.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width : 100% ;
+}
