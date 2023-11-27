@@ -1,12 +1,9 @@
-import Body from "./component/Body";
-import Footer from "./component/Footer";
+
+import Menu from "./component/Menu"
 
 function App() {
   return (
-    <div className="h-[100vh] overflow-hidden">
-      <Body />
-      <Footer />
-    </div>
+    <Menu/>
   );
 }
 
