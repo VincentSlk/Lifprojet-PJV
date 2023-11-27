@@ -1,5 +1,5 @@
-import Body from "./Body";
-import Footer from "./Footer";
+import Body from "./MenuBody.jsx";
+import Footer from "./MenuFooter.jsx";
 
 export default function Menu() {
   return (

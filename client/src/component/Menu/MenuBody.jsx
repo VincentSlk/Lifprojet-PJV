@@ -2,7 +2,7 @@
 import io from 'socket.io-client'
 const socket = io.connect("http://localhost:5174")
 
-function Body() {
+function MenuBody() {
 
 /*
   const sendIdSalon = () => {
@@ -13,8 +13,7 @@ function Body() {
 
 const sendIdSalon = () => {
   var IdSalon = document.getElementById("CodeSalon")
-  alert.getElementById('CodeSalon');
-  socket.emit("send_Id_Salon", {IdSalon});
+  socket.emit("send_Id_Salon", {message:"IdSalon"});
 };
 
   return (
@@ -37,5 +36,5 @@ const sendIdSalon = () => {
   );
 }
 
-export default Body;
+export default MenuBody;
 

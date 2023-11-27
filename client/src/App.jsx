@@ -1,9 +1,15 @@
+import Menu from "./component/Menu/Menu.jsx"
+import {Routes , Route} from "react-router-dom"
 
-import Menu from "./component/Menu"
 
 function App() {
   return (
-    <Menu/>
+    <>
+    <Routes>
+    <Route path="/" element={<Menu/>}/>
+    {/*<Route path="Salon" element={<Salon/>} />*/}
+    </Routes>
+    </>
   );
 }
 
