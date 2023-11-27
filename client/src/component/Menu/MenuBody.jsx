@@ -17,6 +17,7 @@ const sendIdSalon = () => {
 };
 
   return (
+    
     <div className="containerMain h-[95%]">
       <div className="flex flex-col ">
         {/* Button creer qui amene sur une page vers un nouveau jeu */}
@@ -38,3 +39,4 @@ const sendIdSalon = () => {
 
 export default MenuBody;
 
+//JE DOIS CHOPPER LE TEXTE DANS LE TEXT AREA 
