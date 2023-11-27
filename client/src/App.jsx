@@ -1,5 +1,5 @@
 import Menu from "./component/Menu/Menu.jsx"
-import Salon from "./component/Salon/Jeu1.jsx"
+import Salon from "./component/Salon/SalleJeu.jsx"
 import {Routes , Route} from "react-router-dom"
 
 import Erreur from "./component/Erreur.jsx"

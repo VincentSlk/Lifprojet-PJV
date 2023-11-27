@@ -1,4 +1,5 @@
-export default function Erreur() {
+export default function Erreur() 
+{
   return (
 
     <div className="flex items-center justify-center h-screen"> 
