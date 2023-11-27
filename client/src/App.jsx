@@ -1,5 +1,5 @@
 import Menu from "./component/Menu/Menu.jsx"
-import Salon from "./component/Salon/SalleJeu.jsx"
+import Salle from "./component/Salle/Salle.jsx"
 import {Routes , Route} from "react-router-dom"
 
 import Erreur from "./component/Erreur.jsx"
@@ -9,7 +9,7 @@ function App() {
     <>
     <Routes>
     <Route path="/" element={<Menu/>}/>
-    <Route path="/Salon/:Numero" element={<Salon/>} />
+    <Route path="/Salle/:Numero" element={<Salle/>} />
     <Route path="*" element={<Erreur/>} />
     </Routes>
     </>

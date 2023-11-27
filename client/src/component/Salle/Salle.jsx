@@ -4,10 +4,18 @@ import Chat from "./SalleChat"
 
 export default function Salle() 
 {
-  return (
+  return (   
     <>
-    <Chat/>
+
+    <div className="bg-cyan-50 p-96">
+
     <Jeu/>
+    <Chat/>
+    
+
+
+    </div>
+
     </>
   )
 }
