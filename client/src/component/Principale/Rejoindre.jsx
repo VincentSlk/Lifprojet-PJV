@@ -6,7 +6,7 @@ const CreateRoom = () => {
   const [author, setAuthor] = useState("");
 
   return (
-    <div className="bg-gray-700 text-white font-bold py-3 px-4 border border-black rounded-lg">
+    <div className="bg-gray-700 text-black font-bold py-3 px-4 border border-black rounded-lg">
       <div className="container-inputs">
         <div className="side-create-room">
           <h3>Pseudo</h3>
