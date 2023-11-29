@@ -9,7 +9,7 @@ export default function Salle()
 
     <div className="bg-cyan-50 p-96">
 
-    <Jeu/>
+    {/*<Jeu/>*/}
     <Chat/>
     
 

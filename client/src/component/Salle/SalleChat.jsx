@@ -1,38 +1,52 @@
-import io from 'socket.io-client'
+import { useEffect, useState } from "react"
+import io from "socket.io-client"
+import {} from "react"
+
 const socket = io.connect("http://localhost:5174")
 
-socket.on('chat-message' , data =>{
-  console.log(data)
-} )
+function SalleChat() {
+
+//Room
+const [room, setRoom] = useState("");
+
+//Message
+const [message , setMessage] = useState("");
+const [messageReceived, setMessageReceived] = useState("")
 
 
-
-export default function SalleChat() {
-  return (
-<>
-
-
-
-
-
-    <div id="message-container">
-      
-    </div>
-    <form id="send-container">
-      <input type="text" id="message-input" className="border-black bg-gray-300"/>
-      <button type="submit" id="send-buton">Envoyer</button>
-    </form>
-
-
-  
-
-
-
-
-
-
-
-
-</>
-  );
+const joinRoom = () =>{
+    if (room!==""){
+        socket.emit("join_room", room)
+    }
 }
+
+
+const sendMessage = () => {
+    socket.emit("send_message" , {message , room})
+};
+
+useEffect(() =>{
+    socket.on("receive_message" , (data) =>{
+        setMessageReceived(data.message)
+    });
+}, [socket] );
+
+  return (
+    <>
+    <div> 
+        <input placeholder="Salon number" onChange={(event)=>{
+            setRoom(event.target.value)
+        }}/>
+        <button onClick={joinRoom}>Rejoindre</button>
+    <input placeholder="Message..." onChange={(event)=>{
+        setMessage(event.target.value);
+    }} />
+    <button onClick={sendMessage}>Envoyer</button>
+    <h1>Message : </h1>
+    {messageReceived}
+    </div>
+    </>
+  )
+}
+
+export default SalleChat

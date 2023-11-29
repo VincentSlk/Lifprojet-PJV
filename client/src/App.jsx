@@ -1,8 +1,8 @@
+import Erreur from "./component/Erreur.jsx"
 import Menu from "./component/Menu/Menu.jsx"
 import Salle from "./component/Salle/Salle.jsx"
-import {Routes , Route} from "react-router-dom"
 
-import Erreur from "./component/Erreur.jsx"
+import {Routes , Route} from "react-router-dom"
 
 function App() {
   return (
