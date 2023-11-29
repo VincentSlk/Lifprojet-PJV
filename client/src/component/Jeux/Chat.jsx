@@ -53,7 +53,7 @@ const RoomPageChat = () => {
         </div>
 
         <div className="chat_input">
-          <div className="quizz_input">
+          
             <input
               className="input_text"
               type="text"
@@ -65,7 +65,7 @@ const RoomPageChat = () => {
             <button className="start2 text-white" onClick={sendMessage}>
               Send
             </button>
-          </div>
+          
         </div>
       </div>
     </div>

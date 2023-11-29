@@ -6,14 +6,14 @@ const CreateRoom = () => {
   const [author, setAuthor] = useState("");
 
   return (
-    <div className="bg-white">
+    <div className="bg-gray-700 text-white font-bold py-3 px-4 border border-black rounded-lg">
       <div className="container-inputs">
         <div className="side-create-room">
           <h3>Pseudo</h3>
           <input
             className="create_room_input"
             type="text"
-            placeholder="pseudo"
+            placeholder="Entrer votre pseudo"
             name="text"
             onChange={(event) => {
               setAuthor(event.target.value);
@@ -26,7 +26,7 @@ const CreateRoom = () => {
           <div className="input-pseudo">
             <input
               type="text"
-              placeholder="#"
+              placeholder="Code du salon"
               name="text"
               className="input small create_room_input"
               onChange={(event) => {

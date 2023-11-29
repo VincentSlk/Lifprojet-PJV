@@ -1,11 +1,11 @@
-import CreateRoom from './CreateRoom.jsx'
+import Rejoindre from './Rejoindre.jsx'
 
 function MenuBody() {
 
   return (
     
     <div className="containerMain h-[95%]">
-      <CreateRoom />
+      <Rejoindre />
     </div>
     
   );
@@ -13,4 +13,4 @@ function MenuBody() {
 
 export default MenuBody;
 
-//JE DOIS CHOPPER LE TEXTE DANS LE TEXT AREA 
+// CODE BON PLUS BESOIN DE TOUCHER 

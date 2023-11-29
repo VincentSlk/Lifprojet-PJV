@@ -9,7 +9,7 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={<Principale/>}/>
-      <Route path="/game" element={<Jeux/>} />
+      <Route path="/chat" element={<Jeux/>} />
       <Route path="*" element={<Erreur/>} />
     </Routes>
     </>
@@ -17,3 +17,5 @@ function App() {
 }
 
 export default App;
+
+// CODE BON PLUS BESOIN DE TOUCHER 
