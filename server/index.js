@@ -18,7 +18,7 @@ const io = new Server(server , {
 
 io.on("connection" , (socket) => {
 
-    console.log(`User connected : ${socket.id}`)
+    console.log("User Connected :" ,socket.id)
 
     socket.on("send_message" , (data) =>{
         // console.log(data); ca marche
@@ -27,6 +27,10 @@ io.on("connection" , (socket) => {
 
     socket.on("join_room" , (data) => {
         socket.join(data);
+    })
+
+    socket.on("disconnect", () => {
+        console.log("User Disconnected : " , socket.id)
     })
 });
 

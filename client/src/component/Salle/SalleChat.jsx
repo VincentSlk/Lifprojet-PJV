@@ -29,6 +29,7 @@ useEffect(() =>{
     socket.on("receive_message" , (data) =>{
         setMessageReceived(data.message)
     });
+    
 }, [socket] );
 
   return (
@@ -37,7 +38,7 @@ useEffect(() =>{
         <input placeholder="Salon number" onChange={(event)=>{
             setRoom(event.target.value)
         }}/>
-        <button onClick={joinRoom}>Rejoindre</button>
+        <button onClick={joinRoom}>CAKKKK</button>
     <input placeholder="Message..." onChange={(event)=>{
         setMessage(event.target.value);
     }} />
