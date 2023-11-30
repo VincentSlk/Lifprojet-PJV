@@ -5,14 +5,14 @@ import "../index.css"
 
 const Jeux = () => {
   return (
-    <div className="grid grid-cols-3">
-      <div className="col-span-2 ">
+    <>
+      <div className="col-span-2 w-2/3 absolute left-0 bottom-0">
         <Phaser />
       </div>
-      <div className="bg-black">
+      <div className="bg-black border-black absolute right-0 bottom-0 w-1/3">
         <Chat />
       </div>
-    </div>
+    </>
   )
 }
 

@@ -1,7 +1,7 @@
 
 const Phaser = () => {
   return (
-    <div>Phaser</div>
+    <div id="phaser">Phaser</div>
   )
 }
 
