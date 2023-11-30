@@ -1,5 +1,5 @@
 import Chat from "../component/Jeux/Chat"
-import Phaser from "../component/Jeux/Phaser"
+import Phaser from "../component/Jeux/PhaserJeu"
 import "../index.css"
 
 
