@@ -57,13 +57,13 @@ const RoomPageChat = () => {
             <input
               className="input_text"
               type="text"
-              placeholder="chat"
+              placeholder="Message..."
               onChange={(event) => {
                 setMessage(event.target.value);
               }}
             />
-            <button className="start2 text-white" onClick={sendMessage}>
-              Send
+            <button className="start2 text-black border-black" onClick={sendMessage}>
+              Envoyer
             </button>
           
         </div>
