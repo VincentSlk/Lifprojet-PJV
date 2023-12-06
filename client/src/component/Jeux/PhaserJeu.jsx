@@ -1,11 +1,6 @@
-
-
-const PhaserJeu = () => {
+function PhaserJeu() {
   return (
-    <>
-    <div id='phaser'></div>
-    <script src=''></script>
-    </>
+    <div>PhaserJeu</div>
   )
 }
 
