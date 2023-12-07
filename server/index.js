@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
 	cors: {
-		origin: ["http://localhost:5173", "http://localhost:3000" , "lif.sci-web.net:6000"],
+		origin: ["http://localhost:5173", "http://localhost:3000" , "http://lif.sci-web.net:8000/"],
 		methods: ["GET", "POST"],
 	},
 });
