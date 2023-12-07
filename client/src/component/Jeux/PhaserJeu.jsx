@@ -1,6 +1,8 @@
 function PhaserJeu() {
   return (
-    <div>PhaserJeu</div>
+    <div>
+      <script></script>
+    </div>
   )
 }
 
