@@ -18,5 +18,7 @@ cd server
 npm install
 npm start
 ```
+Pour se connecter au local host  : http://localhost:5173/
+
 
 Phaser est dans les dossier mais l'affichage et la compilation ne sont pas dedans
